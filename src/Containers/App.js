@@ -10,8 +10,7 @@ const mapStateToProps = (state) =>{
    return {
        searchField: state.searchRobots.searchField,
        robots: state.requestRobots.robots,
-       initialState: state.requestRobots.initialState,
-       error: state.requestRobots.error
+       isPending: state.requestRobots.isPending    
    }
 }
 
