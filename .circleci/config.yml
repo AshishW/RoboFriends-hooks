@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  build1:
     docker:
       - image: circleci/ruby:2.4.1 # the primary container, where your job's commands are run
     steps:
@@ -16,5 +16,5 @@ workflows:
   version: 2.1
   build01:
     jobs:
-      - build
       - build1
+      - build2
