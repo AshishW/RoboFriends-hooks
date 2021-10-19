@@ -11,7 +11,7 @@ jobs:
       - image: circleci/ruby:2.4.1 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+      - run: echo "hello world2" # run the `echo` command
 workflows:
   version: 2.1
   build01:
