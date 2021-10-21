@@ -13,8 +13,9 @@ jobs:
       - image: circleci/node:10 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
+      - run: npm install
       - run: echo "testing stuff" # run the `echo` command
-      - run: npm test
+      - run: npm run test
   hithere:
     docker:
       - image: circleci/node:10
